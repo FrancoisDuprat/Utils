@@ -1,4 +1,4 @@
-export function getStringPattern(regexp, string) {
+export.getStringPattern = function(regexp, string) {
 
   if(regexp.exec(string)) {
     var result = regexp.exec(string);
@@ -8,7 +8,7 @@ export function getStringPattern(regexp, string) {
   }
 }
 
-export function getURLParam(name) {
+/*export function getURLParam(name) {
 
   let params = document.location.search.replace('?', '').split('&');
   let o = {};
@@ -28,3 +28,4 @@ export function sortArray(array, reference) {
   });
   return array;
 }
+*/
