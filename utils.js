@@ -1,4 +1,4 @@
-export.getStringPattern = function(regexp, string) {
+exports.getStringPattern = function(regexp, string) {
 
   if(regexp.exec(string)) {
     var result = regexp.exec(string);
