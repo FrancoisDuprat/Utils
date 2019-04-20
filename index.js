@@ -4,7 +4,7 @@ exports.getStringPattern = function(regexp, string) {
     var result = regexp.exec(string);
     return result[1];
   } else {
-    return false;
+    return false; 
   }
 }
 
