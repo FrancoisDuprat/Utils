@@ -1,14 +1,21 @@
-exports.getStringPattern = function(regexp, string) {
+export function getStringPattern(regexp, string) {
 
   if(regexp.exec(string)) {
     var result = regexp.exec(string);
     return result[1];
   } else {
-    return false; 
+    return false;
   }
 }
 
-/*export function getURLParam(name) {
+export function isSameDate(day1, day2) {
+
+  return day1.getFullYear() === day2.getFullYear()
+    && day1.getDate() === day2.getDate()
+    && day1.getMonth() === day2.getMonth();
+}
+
+export function getURLParam(name) {
 
   let params = document.location.search.replace('?', '').split('&');
   let o = {};
@@ -28,4 +35,3 @@ export function sortArray(array, reference) {
   });
   return array;
 }
-*/
